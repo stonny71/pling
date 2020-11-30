@@ -2,7 +2,7 @@
 A light Javascript library for displaying a customized pop-ups or alert.
 It can be used like a Javascript alert() function.
 #### *example*
-alert("hello world");
+alert("hello world");<br>
 Pling ("hello world");
 
 It can also be used inline in HTML to createa pop-up on an element click.\
@@ -12,7 +12,7 @@ It can also be used inline in HTML to createa pop-up on an element click.\
 Put the pling.js source link inside a `<script>` and place inside the `<head>` of your HTML document.
 
 You can also place your Pling.js `<script>` below the `<body>` section.
-**sample**
+**sample** <br>
 `<script src='   '> <script>`
 `<script>`
  `your javaScript codes here`
@@ -21,7 +21,7 @@ You can also place your Pling.js `<script>` below the `<body>` section.
 
 ### Full Documentation
 
-**Displaying alert with a title**
+**Displaying alert with a title**\
 To display alerts with a title, the Pling() function should have two arguments.
 where:
 argument1 is the content of the alert &
@@ -29,24 +29,24 @@ argument2 is the title.
 
 `<button onclick='pling( "Hello world", "greetings" )'></button>`
 
-**Displaying alert with no title**
-The Pling() function should have only one argument.
+**Displaying alert with no title**<br>
+The Pling() function should have only one argument.<br>
 `<button onclick='pling( "Hello world" )'></button>`
 
-**Adding more styles to your alert**
-To add more css styles to the alert, the Pling() function should have three arguments
+**Adding more styles to your alert**<br>
+To add more css styles to the alert, the Pling() function should have three arguments<br>
 where:
-argument1 is the content of the alert
-argument2 is the title &
-argument3 is a className you will use inside your css section.
+argument1 is the content of the alert <br>
+argument2 is the title & <br>
+argument3 is a className you will use inside your css section.<br>
 
-pling.js has provided four classnames to use to actually customise the alert.
-`.btn`  is the "ok" button
-`.title` is the title of the alert
-`.content` is the text content of the alert
-`.argument3` is the alert box itself
+pling.js has provided four classnames to use to actually customise the alert.<br>
+`.btn`  is the "ok" button <br>
+`.title` is the title of the alert <br>
+`.content` is the text content of the alert <br>
+`.argument3` is the alert box itself <br>
 
-**sample code to give your alert a customized look**
+**sample code to give your alert a customized look**<br>
 `<button onclick = 'Pling( "content", "title", "custom")'>`
 `</button>`
 
