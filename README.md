@@ -9,6 +9,10 @@ It can also be used inline in HTML to createa pop-up on an element click.\
 `<button onclick = 'Pling("hello world")'> demo </button>`
 
 ### To start using pling.js in your project.
+
+#### source link
+https://rawcdn.githack.com/stonny71/pling/95d346c1c9ad0faa10c73ee3c041ea8e1fb8a4e8/pling.js
+
 Put the pling.js source link inside a `<script>` and place inside the `<head>` of your HTML document.
 
 You can also place your Pling.js `<script>` below the `<body>` section.
