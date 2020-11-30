@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css"/>
+<link rel="stylesheet" href="css/all.css"/>
+<link rel="stylesheet" href="theme.css"/>
+<title>pling.js</title>
+<script src="https://rawcdn.githack.com/stonny71/pling/95d346c1c9ad0faa10c73ee3c041ea8e1fb8a4e8/pling.js">  </script>
+
+<style type="text/css">
+header, footer, .theme{
+color:# !important;
+}
+
+header {
+
+}
+
+textarea {
+border: none;
+width:100%;
+font-size:12px;
+background:#3E2723;
+border-radius:4px;
+padding:4px;
+color:#FFB74D;
+}
+
+.b{
+font-weight:500;
+}
+
+.flow{
+font-weight:300;
+font-size:18px;
+}
+
+mark{
+color:#FF5722 ! important;
+background:transparent;
+}
+
+
+
+
+/**main container**/
+.bat .box{
+height:300px;
+border:10px solid #263238;
+background:#78909C !important;
+color:#333 !important;
+}
+
+/**title of the alert**/
+
+
+/**content of the alert**/
+.bat .content{
+color:#fff !important;
+}
+
+/**ok button**/
+.bat .btn{
+display:none;
+background:rgba(0,0,0,0.1) !important;
+color:#fff !important;
+}
+
+
+/**main container**/
+.bar .box{
+
+background:#fff !important;
+color:#333 !important;
+}
+
+/**title of the alert**/
+.bar .title{
+border-top-right-radius:4px;
+border-top-left-radius:4px;
+background:#283593 ! important;
+color:#fff !important;
+padding:100px;
+}
+
+/**content of the alert**/
+.bar .content{
+color:#333 !important;
+padding:0px 5px;
+}
+
+/**ok button**/
+.bar .btn{
+background-colorround:#DD2600 !important;
+color:#333 !important;
+}
+
+
+
+
+
+
+
+
+
+/**main container**/
+.custom .box{
+background:#333 !important;
+color:#fff !important;
+}
+
+/**title of the alert**/
+.custom .title{
+background:#64B5F6 ! important;
+color:#fff !important;
+}
+
+/**content of the alert**/
+.custom .content{
+color:#fff !important;
+}
+
+/**ok button**/
+.custom .btn{
+background:#333 !important;
+color:#fff !important;
+}
+.w3-idigo {
+background:#333 ! important;
+color:white;
+
+}
+
+body,.w3-code{
+font-family: Poppins, sans-serif;
+}
+
+.g{
+color:#424242 ! important;
+}
+
+.w3-margin{
+margin:0px;
+}
+
+a{
+text-decoration:none;
+color:yellow;
+}
+
+.w3-btn{
+outline:none;
+}
+.w3-panel, .w3-code{
+border-color:#90A4AE ! important;
+}
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="w3-theme-l5 w3-large" >
+<header style="padding-top:10px"  class="  w3-indig w3-theme-dark" >
+<center>
+<div class="w3-round w3-border w3-yellow w3-margin w3-xxlarge "   ><center>
+<div class="fa fa-cat w3-paddig" style="margin:10px" > 
+<div class=" " >PLING<span class="w3-jumbo w3-text-red" ><span class="w3-xlarge" >■</span></span>JS</div>
+</div>
+</center></div>
+  </center>
+  
+  <div class="w3-padding flow " >
+  
+<p class="w3-card w3-padding" ><i class=" fa fa-cat"></i>  A tiny javaScript library for displaying custom alerts or pop-ups.  </p>
+<p  class="w3-padding w3-card" ><i class=" fa fa-cat"></i> The file size is 1kb, nothing to worry about!</p>
+<p class="w3-padding w3-card w3-justiy" ><i class=" fa fa-cat"></i>  Helps you write fashionable alerts directly with HTML without needing to write your JavaScript inside a script tag</p>
+
+</div>
+</header>
+<div class="w3-margin w3-card w3-padding w3-white" >
+<br>
+<center>
+<button onclick="Pling('Thank you for your feedback we will attend to you shortly.','Admin')"  class="w3-round-xxlarge w3-btn w3-theme-dark w3-text-white w3-block w3-padding-large rad" >Demo 1</button>
+<br>
+<button onclick="Pling('Downloading complete !')"   class="w3-round-xxlarge w3-btn  w3-text-white w3-block w3-padding-large w3-theme-dark"> Demo 2</button>
+<br>
+
+<button onclick="Pling('Thank you for choosing our product','Welcome!','bar')"   class="w3-round-xxlarge w3-btn  w3-text-white w3-block w3-padding-large w3-theme-dark"> Demo 3</button>
+<br>
+<button onclick="Pling('This is a sample or demonstration on the things you can do with Pling.js...Hope you enjoy.\nclick outside the box to exit','','bat')"   class="w3-round-xxlarge w3-btn  w3-text-white w3-block w3-padding-large w3-theme-dark"> Demo 4</button>
+<br>
+</center>
+<br></div>
+<hr>
+<!--doc-->
+<div class="w3-card g w3-padding w3-margin w3-white" >
+<h1 id="doc" class="w3-xxlarge"  ><b>HOW TO USE</b></h1>
+<p class="w3-xlarge" >
+
+<p class="w3-small" ><b class="" >The source link should be placed inside the head section of your html document.</b></p>
+
+To start using, you either link from the <b class="w3-text-indigo" ><a href="https://rawcdn.githack.com/stonny71/pling/95d346c1c9ad0faa10c73ee3c041ea8e1fb8a4e8/pling.js" class="w3-text-indigo"  >CDN</a></b> 
+
+</p>
+<div class=" w3-small w3-code htmlHigh notranslate w3-text-red w3-light-grey" >
+&lt;script src=""&gt;  &lt;/script&gt;
+
+</div>
+
+<p class="g" >
+OR download the source and host from your computer.  
+</p>
+<div class=" w3-code w3-light-grey htmlHigh notranslate w3-text-red w3-small" >
+&lt;script src="pling.js"&gt;  &lt;/script&gt;
+
+</div>
+<hr>
+<div class="w3-panel w3-light-grey w3-small"> 
+  <h4>Quick Template</h4>
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+    &lt;title&gt;Pling js &lt;/title&gt;<br>
+    &lt;body&gt;<br><br>
+    &lt;button onclick="Pling('Hello world')"&gt;demo&lt;/h1&gt;<br>
+    <br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+  </div>
+<hr>
+</div>
+</div>
+<div class="w3-card w3-theme-action w3-padding" >
+<h3 class="b w3-text-yellow" >Displaying alerts using pling.js</h3>
+The main syntax is <b class="w3-text-orange" >Pling(syntax1, syntax2, syntax3)</b><br>
+where: <br>
+<b class="w3-text-orange" >syntax1</b> is the content of the alert.<br>
+<b class="w3-text-orange" >syntax2</b> is the title of the alert <span class="w3-tiny" >(optional).</span><br>
+<b class="w3-text-orange" >syntax3</b> is used for adding custom css styles to the alert<span class="w3-tiny" >(optional).</span><br>
+</div>
+
+<hr>
+
+<div class="w3-card w3-margin w3-padding w3-white g" >
+<h2 class="w3-text-indigo b" >Displaying alerts with a title. </h2>
+<p>The first argument is the content of the alert while the second argument is the title.</p>
+<div class="w3-panel w3-light-grey w3-small"> 
+
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+&lt;button onclick="Pling('I am the content', 'I am the title')"&gt; demo &lt;/button&gt;
+</div></div>
+<p>
+<button onclick="Pling('I am the content','I am the title')" class="w3-btn w3-theme-dark w3-round w3-block" >Demo</button>
+</p>
+</div>
+<br>
+<hr>
+
+<div class="w3-card w3-padding w3-margin w3-white g" >
+<h2 class="w3-text-indigo b" >Displaying alerts without a title. </h2>
+<p>
+To display alert without a title, the second argument should not be included.
+</p>
+<div class="w3-panel w3-light-grey w3-small"> 
+
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+&lt;button onclick="Pling('I am the content')"&gt; demo &lt;/button&gt;
+</div></div>
+
+<p>
+<button onclick="Pling('i have no title')" class="w3-btn w3-theme-dark w3-round w3-block" >Demo</button>
+</p>
+</div>
+<br>
+<hr>
+
+
+<div class="w3-padding w3-card w3-theme-action " >
+
+<h1 class="w3-text-yellow b" >Using pling.js inside JavaScript environment.</h1>
+<p>
+Pling.js works like JavaScript alert() function, just that Pling.js provides extra parameters for adding more features to your alerts.<br>
+All you just need is replace <span class="w3-text-yellow b" >alert</span> with <span class="w3-text-yellow b" >Pling</span>
+</p>
+<div class="w3-panel w3-light-grey w3-small"> 
+
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+&lt;script&gt;<br><br>
+Pling('I am the content');<br> <br>&lt;/script&gt;
+</div></div>
+<br>
+</div>
+<hr>
+<div class="w3-padding w3-margin w3-card g w3-white " >
+
+<h2 class="w3-text-indigo b" >Using pling.js inside another function</h2>
+<p>
+
+In the below sample, Pling.js is used to display the current year.
+</p>
+<div class="w3-code w3-light-grey htmlHigh notranslate w3-small" >
+&lt;script&gt;<br>
+<br>
+function showYear(){<br>
+   d= new Date();<br>
+   year = d.getFullYear();<br>
+   Pling(year, "The current year is");<br>
+ }<br><br>
+&lt;/script&gt;
+</div>
+<button onclick="showYear()" class="w3-block w3-round w3-btn w3-theme-dark w3-ripple" >sample</button>
+</div>
+<br>
+</div>
+<hr>
+<div class="w3-theme-dark w3-card w3-padding"  >
+
+<h2 class="w3-text-yellow b" >Adding css styles to your pling.js alert</h2>
+<p style="line-height:30px" >
+To add a custom css to the alert, include the third argument.<br><br>
+ <b class="w3-text-yellow" >
+The third argument is a name you will use inside your  css sheet;<br><br>
+<mark class="w3-text-blue-grey" >sample:</mark></b><br>
+ <b class="w3-text-orange" >
+ Pling("hello my button is red", "red button", "custom");
+ </b> <p></p>
+Pling.js has several class names you can use to add customized styles to your alert.<br>
+<p></p>
+<mark>.btn</mark> is the "ok button"<br>
+<mark>.title </mark> is the title of the alert.<br>
+<mark>.content</mark> is the content of the alert.
+<mark>.box</mark> is the alert container itself.
+</p>
+</div>
+<hr>
+
+<div style=""  class="w3-card w3-padding w3-margin g w3-white" >
+<h2 class="w3-text-indigo b" >Customizing the alert using css</h2>
+Using <mark class="b" >custom</mark> as the third argument.
+<br>
+You can always use any name as the third argument. (any name used as the third argument should be used inside your css sheet to style the alert.<br> you can give different names to different alerts in your project.<br>
+
+<div class="w3-panel w3-light-grey w3-small"> 
+
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+&lt;button onclick = 'Pling( "content", "title", "custom")'&gt;  <br>
+
+&lt;/button&gt;
+</div></div>
+<br>
+Inside your css sheet:
+<div class="w3-panel w3-light-grey w3-small"> 
+
+  <div class="w3-code htmlHigh notranslate w3-small w3-light-grey">
+
+&lt;style&gt;<br><br>
+/**main container**/<br>
+.custom .box{<br>
+background:#333 !important;<br>
+color:#fff !important;<br>
+}
+<br><br>
+/**title of the alert**/<br>
+.custom .title{<br>
+background:#64B5F6 ! important;<br>
+color:#fff !important;<br>
+}
+<br><br>
+/**content of the alert**/<br>
+.custom .content{<br>
+color:#fff !important;<br>
+}<br>
+<br>
+/**ok button**/<br>
+.custom .btn{<br>
+background:#333 !important;<br>
+color:#fff !important;<br>
+}<br><br>
+&lt;/style&gt;
+</div>
+
+<div>
+<button class="w3-medium w3-theme-dark w3-round w3-btn w3-block"  onclick="Pling('I have a dark button','customized css','custom')">sample</button>
+</div></div>
+<hr>
+<div class="w3-theme-l5 w3-padding w3-small" >
+<h3 class="w3-text-red" ><i class="fa fa-info-circle" > </i> NOTE</h3>
+<p>Always add <mark>!important</mark> while trying to add custom colors in the css sheet. e.g<br>
+<div class="w3-text-purple" >
+<mark>.custom .btn</mark>{<br>
+<mark class="w3-text-teal" >background</mark>:red !important;<br>
+<mark class="w3-text-teal" >color</mark>:white !important<br>
+}
+</div>
+</div>
+</p>
+</div>
+
+
+<footer class=" w3-theme-dark w3-padding w3-padding-32"  >
+<center>
+<div class="fa w3-xxlarge fa-cat w3-paddng" style="color:yellow"  >
+
+</div>
+<br>
+Developed by <a href="#https://github.com/stonny71" class="w3-large" >Stonny</a>
+
+</center>
+<p class="w3-xlarge" >
+
+</p>
+
+<p class="" style="text-align:left" >
+<i class="fa fa-info-circle w3-text-red" ></i>
+<a href="https://code.sololearn.com/W2kSJGJl1d29/?ref=app" >Pocket Life</a> game is updated and implemented with pling.js, you can play to see the full effect of this project.
+<hr>
+<i class="w3-small" >
+This library is an open source project, feel free to distribute, edit and use at your own satisfaction. Any suggestions and contributions is highly welcomed.
+</i>
+</p>
+
+</footer>
+<script src="color.js">  </script>
+<script type="text/javascript">
+w3CodeColor()
+function showYear(){
+ d= new Date();
+ year = d.getFullYear();
+ Pling(year, "The current year is");
+ }
+
+
+//Pling("colois hsh","red","tag")
+</script>
+</body>
+</html>
