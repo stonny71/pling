@@ -48,7 +48,7 @@ pling.js has provided four classnames to use to actually customise the alert.<br
 `.btn`  is the "ok" button <br>
 `.title` is the title of the alert <br>
 `.content` is the text content of the alert <br>
-`.argument3` is the alert box itself <br>
+`.box` is the alert box itself <br>
 
 **sample code to give your alert a customized look**<br>
 `<button onclick = 'Pling( "content", "title", "custom")'>`
