@@ -12,6 +12,7 @@ mask.style.position="fixed";
 mask.style.height="100vh";
 mask.style.width="100vw";
 mask.style.top="0";
+mask.style.zIndex=1000;
 mask.style.background="rgba(0,0,0,0.3)";
 
 /**main container**/
